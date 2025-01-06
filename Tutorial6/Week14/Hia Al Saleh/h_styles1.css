@@ -1,0 +1,96 @@
+/* h_styles.css */
+
+/* Author: Hia Al Saleh
+   Date: December 6th, 2024
+   Description: This file contains the CSS styles for the HTML pages of the project. */
+
+/* General Page Styling */
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #f0f8ff;
+   color: #333;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   background-image: url('/images/bg.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+/* Main Content Styling */
+main {
+   margin: 0 auto;
+   padding: 20px;
+   background-color: rgba(255, 255, 255, 0.642);
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+h1 {
+   color: #fdfafa;
+   font-size: 2em;
+   margin: 0;
+   padding: 20px 0;
+}
+
+/* Subheading Styling */
+h2 {
+   color: #52287a;
+   font-size: 1.5em;
+   margin: 0;
+   padding: 20px 0;
+}
+
+/* Paragraph Styling */
+p {
+   color: #000000;
+   margin: 0;
+   padding: 10px 0;
+}
+
+/* Link Styling */
+header,
+footer {
+   background: linear-gradient(to right, #52287a, #846e99);
+   color: white;
+   padding: 20px 0;
+}
+
+/* Footer Styling */
+footer p {
+   margin: 0;
+   color: #f0f8ff;
+}
+
+/* Table Styling */
+table {
+   pointer-events: none;
+}
+
+table {
+   width: 80%;
+   margin: 20px auto;
+   border-collapse: collapse;
+   background-color: white;
+   pointer-events: auto;
+}
+th, td {
+   border: 1px solid #ddd;
+   padding: 8px;
+   text-align: left;
+}
+
+th {
+   background-color: #52287a;
+   color: rgb(97, 43, 142);
+}
+
+tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+tr:hover {
+   background-color: #ddd;
+}
