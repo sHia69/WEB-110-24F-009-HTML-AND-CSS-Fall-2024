@@ -1,0 +1,43 @@
+<p style="color:black;"><strong>1. What is a markup language?</strong></p>
+<p style="color:blue;">A <strong>markup language</strong> is a way of writing documents that include instructions on how the text should look or be structured. It's used to create web pages. Examples are HTML, which makes web pages, and XML, which organizes data.</p>
+
+<p style="color:black;"><strong>2. What is XHTML? How does XHTML differ from HTML?</strong></p>
+<p style="color:blue;"><strong>XHTML</strong> is a version of HTML that is stricter and follows more precise rules, similar to XML.</p>
+<p style="color:blue;"><strong>Differences between XHTML and HTML:</strong></p>
+<ul style="color:blue;">
+    <li><strong>Rules:</strong> XHTML has stricter rules. For example, every tag must be closed, and tags should be written in lowercase.</li>
+    <li><strong>Structure:</strong> XHTML requires that all tags be properly nested (you can't close a tag before closing the tags inside it).</li>
+    <li><strong>Empty Tags:</strong> Tags like &lt;br&gt; must be written as &lt;br /&gt; in XHTML.</li>
+</ul>
+
+<p style="color:black;"><strong>3. What is the W3C? What is the WHATWG?</strong></p>
+<p style="color:blue;"><strong>W3C (World Wide Web Consortium):</strong> The W3C is a group that creates standards for the web to make sure it works well for everyone.</p>
+<p style="color:blue;"><strong>WHATWG (Web Hypertext Application Technology Working Group):</strong> The WHATWG is another group that works on developing web standards, especially focused on practical use and improvements for web developers.</p>
+
+<p style="color:black;"><strong>4. What is a doctype? What is the doctype for an HTML5 document?</strong></p>
+<p style="color:blue;">A <strong>doctype</strong> is a declaration at the top of an HTML document that tells the browser which version of HTML is being used, so it can display the page correctly.</p>
+<p style="color:blue;">The <strong>doctype</strong> for an HTML5 document is:</p>
+<pre style="color:blue;">&lt;!DOCTYPE html&gt;</pre>
+
+<p style="color:black;"><strong>5. What is incorrect about the following code? Suggest a possible revision of the code to correct the error.</strong></p>
+<pre style="color:blue;">
+&lt;p&gt;&lt;strong&gt;Curbside Thai now delivers!&lt;/p&gt;&lt;/strong&gt;
+</pre>
+<p style="color:blue;"><strong>Problem:</strong> The &lt;strong&gt; tag isn’t properly closed before the closing &lt;/p&gt; tag, which is incorrect.</p>
+
+<p style="color:blue;"><strong>Corrected code:</strong></p>
+<pre style="color:blue;">
+&lt;p&gt;&lt;strong&gt;Curbside Thai now delivers!&lt;/strong&gt;&lt;/p&gt;
+</pre>
+
+<p style="color:black;"><strong>6. Provide code to mark "Curbside Thai Employment Opportunities" as the document title.</strong></p>
+<pre style="color:blue;">&lt;title&gt;Curbside Thai Employment Opportunities&lt;/title&gt;</pre>
+
+<p style="color:black;"><strong>7. Provide code to create metadata adding the keywords "food truck, North Carolina, and dining" to the document.</strong></p>
+<pre style="color:blue;">&lt;meta name="keywords" content="food truck, North Carolina, dining"&gt;</pre>
+
+<p style="color:black;"><strong>8. Provide code to tell the browser that the character encoding UTF-16 is used in the document.</strong></p>
+<pre style="color:blue;">&lt;meta charset="UTF-16"&gt;</pre>
+
+<p style="color:black;"><strong>9. Provide code to add the comment "Created by Sajja Adulet" to the document.</strong></p>
+<pre style="color:blue;">&lt;!-- Created by Sajja Adulet --&gt;</pre>
