@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Hia Al Saleh, Student Number: 0868639 -->
+    <title>Hero Nomination</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <style type="text/css">
+        body { background: url(back2.jpg); font-size: 12pt; font-family: Book Antiqua; line-height: 16pt; margin-left: 15px; margin-right: 15px; color: maroon; }
+        p  { margin-left: 24px; margin-right: 24px; }
+        h1 { font-size: 24pt; font-family: Prose Antique, Lucida Handwriting; line-height: 30pt; text-align: center; }
+        h2 { font-size: 18pt; font-family: Prose Antique, Lucida Handwriting; font-weight: bold; line-height: 22pt; }
+        div.byline { font-style: italic; }
+        div.footnote { font-size: 9pt; text-align: center; }
+        address { border-top: 4px solid black; font-style: normal; font-size: 12pt; font-family: sans-serif; text-align: center; color: white; background-color: rgb(192,80,77); }
+        table caption { caption-side: bottom; text-align: right; }
+    </style>
+</head>
+<body>
+    <h1>Nominate a local HERO today!</h1>
+    <h2>Nomination Details</h2>
+    <div class="byline">by Hia Al Saleh</div>
+    <p>Here is your chance to nominate someone from your community who you think is a hero. Simply fill in the form below and submit your entry.</p>
+    <div class="footnote">
+        <span style="font-style: italic">My name is Hia Al Saleh, and I attend St. Clair College in Windsor, Ontario.</span>
+    </div>
+    <hr style="color: rgb(133,0,0); background-color: rgb(133,0,0); height: 1" />
+    <p>Nominate your local hero here!</p>
+
+    <!-- *********************************************** -->
+    <!-- PART ONE: The FORM starts here    ************* --> 
+    <!-- *********************************************** -->
+
+    <!-- FORM -->
+    <form id="heroForm" action="FormProcessor.html" method="post">
+        <!-- Hidden field -->
+        <input type="hidden" name="favoriteColor" value="Purple">
+
+        <!-- Your Information -->
+        <fieldset>
+            <legend><b>Your Information</b></legend>
+            <label>First Name: <input type="text" name="firstName" placeholder="First Name" required></label><br>
+            <label>Last Name: <input type="text" name="lastName" placeholder="Last Name" required></label><br>
+            <label>Contact Email: <input type="email" name="contactEmail" placeholder="Contact Email *" required></label><br>
+            <label>Country of Birth: <input type="text" name="countryOfBirth" value="Canada" required></label>
+        </fieldset>
+
+        <!-- Nominee Information -->
+        <fieldset>
+            <legend><b>Nominee Information</b></legend>
+            <label>First Name: <input type="text" name="nomineeFirstName" placeholder="Nominee First Name"></label><br>
+            <label>Last Name: <input type="text" name="nomineeLastName" placeholder="Nominee Last Name"></label><br>
+            <label>Gender: 
+                Male <input type="radio" name="gender" value="male">
+                Female <input type="radio" name="gender" value="female">
+            </label><br>
+            <label>Municipality: (Select one or more) <br>
+                <select name="municipalities" multiple>
+                    <option value="Amherstburg">Amherstburg</option>
+                    <option value="Essex">Essex</option>
+                    <option value="Kingsville">Kingsville</option>
+                    <option value="Lakeshore">Lakeshore</option>
+                    <option value="LaSalle">LaSalle</option>
+                    <option value="Tecumseh">Tecumseh</option>
+                    <option value="Leamington">Leamington</option>
+                    <option value="Windsor">Windsor</option>
+                </select>
+            </label><br>
+            <label>Comments: (Why do you think this person deserves to be nominated?)</label><br>
+            <textarea id="comments" name="comments" rows="5" cols="80">Enter 10 words or more.</textarea><br>
+            <label><input type="checkbox" name="ageCheck" value="18+"> I am 18 years or older</label><br>
+            <label>Rank this nominee (0-10): <input type="number" name="rankNominee" min="0" max="10" value="5" required></label><br>
+            <label>Member Password: <input type="password" name="memberPassword" placeholder="Enter Password"></label><br>
+            <label>Rate this Candidate: 1 <input type="range" name="rateCandidate" min="70" max="100" step="10" value="90"></label></input> 10 </fieldset>
+
+        <!-- Submit and Reset -->
+        <button type="submit">Submit Form</button>
+        <button type="reset">Cancel</button>
+    </form>
+    <!-- *********************************************** -->
+    <!-- PART TWO: Create your PERSONAL HTML TABLE here! -->
+    <!-- *********************************************** -->
+
+    <!-- PERSONALIZED HTML TABLE -->
+    <br />
+    <table border="1">
+        <caption>Date: 12/12/2024</caption>
+        <tr>
+            <td colspan="3">PERSONAL INFORMATION</td>
+        </tr>
+        <tr>
+            <td rowspan="4"><img src="Hia_AlSaleh.jpg" alt="Hia Al Saleh's Photo" height="110"></td>
+            <td colspan="2">Hia Al Saleh</td>
+        </tr>
+        <tr>
+            <td colspan="2">1649 St Clair Ave, N9B 3K9</td>
+        </tr>
+        <tr>
+            <td>Windsor</td>
+            <td>Ontario</td>
+        </tr>
+        <tr>
+            <td>Canada</td>
+            <td>Purple</td>
+        </tr>
+    </table>
+
+    <!-- ADDRESS -->
+    <hr>
+    <address>
+        St. Clair College &#183; 2000 Talbot Road West &#183; Windsor, Ontario
+    </address>
+</body>
+</html>

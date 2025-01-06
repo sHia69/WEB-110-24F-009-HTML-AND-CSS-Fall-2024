@@ -1,0 +1,29 @@
+/* ------------------
+ Name: Hia Al Saleh
+ Date: October 8th, 2024
+ 
+ Filename: layout.css
+ Description: This is a CSS file that contains the layout styles for the home page.
+*/
+
+/* Section Styles */
+section {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 50px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Logo Styles */
+.logo {
+    display: inline-block;
+    margin: 1rem 0;
+    max-width: 200%;
+    height: auto;
+    transition: transform 0.3s ease;
+}

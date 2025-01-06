@@ -1,0 +1,195 @@
+HAS_HOME.HTML
+
+Welcome to My Personal Website!
+I'm Hia, a Computer Programming student from St. Clair College. I enjoy programming, art, and gaming!
+Learn more about me on my About Me page.
+
+© 2021 – St Clair College. Hia Al Saleh - 0868639
+RETURN TO TOP
+-------------------------------------------------------------------------------------------------------
+HAS_INDEX.HTML
+
+About Me
+Hello, my name is Hia, but its actual pronunciation is Haya. You could have wondered, how did it change to Hia; it is because I was in Germany, and they didn't have this name. 
+So, you can see that it is Hia, but my preference is Haya because it is my real one. My pronouns are she/her. I speak three fluent languages: Turkmen, Arabic, and Turkish. 
+I have learned English in Canada, and I can speak four languages. I am also learning Korean and Spanish.
+
+I live in Windsor, Ontario, Canada. In my family, there are three sisters and one brother. 
+Since my family had always made me the middle child, I would find a balance in or between my siblings. Currently, I am attending St. Clair College as a first-year Computer Programming student. It all started in high school, really, where I learned tons about different coding languages, various tools, and generally about tech stuff. I really like coding because it offers challenges while building something new. My goal is to be continuously better and work on software that may do some real good. 
+I would be glad to share more about my interests and experiences with you!
+Education
+Akşemsettin Anadolu Lisesi (Turkey)
+2019 - 2020
+
+Leamington District Secondary School (Canada)
+2020 - 2023
+
+Vincent Massey Secondary School (Canada)
+2023 - 2024
+
+Adult & Continuing Education (Canada)
+2024
+
+Work Experience
+In 2021, I joined the world of programming, beginning with C++ as my first language. Since then, I have worked on several exciting projects that reflect my growth and passion for coding. My work experience includes:
+- Learning important computer science topics like algorithms and data structures.
+- Using tools like Git and GitHub to manage code.
+- Working on group projects to get better at teamwork.
+- Attending workshops and talks to hear from experts.
+- Exploring different parts of computer science, like web development, mobile apps, and cybersecurity.
+- Building up math skills to help with problem-solving and logical thinking in coding.
+- Joining coding and tech clubs to stay involved.
+
+Programming Languages & Tools
+Here are some of the programming languages and tools I have experience with:
+- LaTeX
+- Python
+- C++
+- Java
+- Julia
+- C#
+- CSS
+- HTML
+- JavaScript
+- React
+- Go
+- PHP
+- Lua
+- Matlab
+- xml
+- MySQL
+- Json
+- Linux
+- Node.js
+- Npm
+- Git
+- Redux
+- VSCode
+- Vim
+
+Travel Experience
+Traveling has always been a passion of mine, and I have been fortunate to visit several countries around the world. Some of the places I have visited include:
+Beirut, Lebanon
+Khushal, Lebanon
+Zahlé, Lebanon
+Mecca, Saudi Arabia
+Raad, Saudi Arabia
+Berlin, Germany
+Dersden, Germany
+Gaziantep, Turkey
+Ankara, Turkey
+Istanbul, Turkey
+Leamington, Canada
+Windsor, Canada
+Toronto, Canada
+
+Each trip has given me a unique perspective on different cultures and traditions, and I look forward to exploring more countries in the future.
+
+Interesting Facts About Me
+
+I am a painter artist, a programmer, math enthusiast, and a lifelong learner.
+I like spending my time with LaTeX stuff.
+I love playing video games, especially "Geometry Dash".
+I am a huge fan of the anime series "Danganronpa V3".
+My favorite food is Dolma; it is a Turkish food.
+My favourite composer is Ludwig van Beethoven and I drew it. Click here for more artworks.
+I made an additional personal website, but it does not have my real name on it. You can check it out here: MyWebsite.
+
+Additional Information
+
+Why did you choose the Computer Programming program at St. Clair College?
+I choose this program because I like programming.
+
+If you could meet one person on this planet, who would it be and why!
+If I could meet one person on this planet, I would choose to meet the famous mathematician, Andrew Wiles. He is known for proving Fermat's Last Theorem, a problem that had remained unsolved for over 350 years. I would love to discuss his journey and the challenges he faced while working on this theorem.
+
+© 2021 – St Clair College. Hia Al Saleh - 0868639
+RETURN TO TOP
+-------------------------------------------------------------------------------------------------------------
+HAS_HOBBIES.HTML
+
+My Hobbies 
+
+I really like Discord—it's basically my favorite place to connect and chill. If I’m not coding or working on my art, you can usually find me playing Geometry Dash, osu!catch, chess, Roblox, Heart of Tibet, Giza, or Danganronpa V3. I’ve played Geometry Dash since 2015, and it's still one of my favorite games.
+
+Outside gaming, I enjoy tinkering with projects and learning new things. Delving into technology-based ideas and learning new skills is very enjoyable. Mathematics, art, and especially LaTeX are quite interesting to me. LaTeX helps me format my works; it's clean and professional. I wrote my first research paper on the mathematical analysis of a triple integral using gamma function and binomial series, formatted in LaTeX. I code, create art, or level up to achieve something meaningful to share with others.
+
+I enjoy reading books, listening to music, and watching movies and Kdramas in my free time. I enjoy mystery, thriller, and horror movies, as well as reading about mathematics and computer science. I also listen to a variety of music genres, including pop, rock, and classical.
+
+Books I've Read So Far
+
+Some of the books I’ve enjoyed:
+- Playing Chicken by Paul Kropp
+- The Great Gatsby by F. Scott Fitzgerald
+- And Then There Were None by Agatha Christie
+- Things Fall Apart by Chinua Achebe
+- The Break by Katherena Vermette
+- The Little Prince by Antoine de Saint-Exupéry
+- Harry Potter and the Philosopher's Stone by J.K. Rowling
+- Understanding Analysis by Stephen Abbott
+- Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
+- Discrete Mathematics and Its Applications by Kenneth H. Rosen
+- Introduction to the Theory of Computation by Michael Sipser
+
+Movies
+
+Here are some of the movies I've enjoyed:
+- Hidden Figures directed by Theodore Melfi
+- The Cat directed by Seung-wook Byeon
+- Knives Out directed by Rian Johnson
+- The Grudge directed by Takashi Shimizu
+- Get Out directed by Jordan Peele
+- Us directed by Jordan Peele
+- Parasite directed by Bong Joon-ho
+- Shutter Island directed by Martin Scorsese
+- Se7en directed by David Fincher
+- Prisoners directed by Denis Villeneuve
+- Donnie Darko directed by Richard Kelly
+- Black Swan directed by Darren Aronofsky
+- All Jackie Chan and Chris Tucker movies
+
+My Favorite Kdrama
+
+Here are some of the Kdramas I've enjoyed:
+- The Beauty Inside directed by Baik
+- Touch Your Heart directed by Park Joon-hwa
+- High School: Love On directed by Sung Joon-hae
+- Who Are You: School 2015 directed by Baek Sang-hoon
+- Cinderella with Four Knights directed by Kwon Hyuk-chan and Lee Min-woo
+- Strong Woman Do Bong Soon directed by Lee Hyung-min
+- Lovely Runner directed by Yoon Jong-ho
+- Doctor Slump directed by Oh Hyun-jong
+- Reunited Worlds directed by Baek Soo Chan
+- Squid Game directed by Hwang Dong-hyuk
+- It's Okay to Not Be Okay directed by Park Shin-woo
+- Crash Landing on You directed by Lee Jung-hyo
+- Descendants of the Sun directed by Lee Eung-bok and Baek Sang-hoon
+- My Love from the Star directed by Jang Tae-yoo
+
+
+My Favorite Music Playlist
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1Epv06Bw5q8jKH?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+© 2021 – St Clair College. Hia Al Saleh - 0868639
+RETURN TO TOP
+-----------------------------------------------------------------------------------------------------------------
+HAS_PROJECTS.HTML
+
+My Projects
+Check out some of the projects I've been working on:
+- Mobile App: An app that showcases my life story experience.
+- Geometry Dash: An amazing project related to my favorite game "Geometry Dash".
+- Arkanoid Game: A simple project called Arkanoid Game. The game has cool features like moving a paddle to hit the ball, breaking bricks, and keeping track of your score.
+- Integral Area Calculator: This project delves into the process of calculating the area under a curve using integrals, complemented by code snippets in C++.
+- HTMLDesignLab: HTMLDesignLab is your go-to resource for HTML code snippets, components, and templates to streamline web design.
+- LanglandsHub: Langlands Hub is a web application for exploring mathematical concepts.
+- Obsidian-UG-Notes: My Undergraduate studies notes in Obsidian.
+- Julia: Explore my files and experiments with the Julia programming language.
+- Python: Dive into my collection of Python projects, showcasing a variety of applications and scripts.
+- Cpp Programming Resources: Explore a curated collection of C++ programming resources in this repository.
+- TeX: Discover my TeX projects, which include various documents and templates created using the TeX typesetting system.
+- Undergraduate-Math: Undergraduate Math materials written in LaTeX.
+- MCR3U-Functions-University-Notes: Notes for Grade 11 Functions Math written in LaTeX.
+
+© 2021 – St Clair College. Hia Al Saleh - 0868639
+RETURN TO TOP

@@ -1,0 +1,205 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Header
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Tutorial 2: Getting Started with CSS}
+\fancyhead[R]{Instructor: Mike Girimonte}
+
+% Section formatting
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+% Listings settings
+\lstset{
+  basicstyle=\ttfamily,
+  columns=flexible,
+  keepspaces=true,
+  frame=single,
+  backgroundcolor=\color{gray!10},
+  keywordstyle=\color{blue},
+  commentstyle=\color{green},
+  stringstyle=\color{red}
+}
+
+\title{Tutorial 2: Getting Started with CSS}
+\author{Hia Al Saleh}
+\date{September 23rd, 2024}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage 
+\section*{Objectives}
+\begin{itemize}
+    \item Explore the history of CSS
+    \item Study different types of style sheets
+    \item Explore style precedence and inheritance
+    \item Apply color in CSS
+    \item Use contextual selectors
+    \item Work with attribute selectors
+    \item Apply text and font styles
+    \item Use a web font
+    \item Define list styles
+    \item Work with margins and padding space
+    \item Use pseudo-classes and pseudo-elements
+    \item Insert page content with CSS
+\end{itemize}
+
+\section{CSS Styles and Colors}
+\subsection{Introducing CSS}
+\begin{itemize}
+    \item The appearance of the page is determined by one or more style sheets written in the Cascading Style Sheets (CSS) language.
+    \item The latest version of the CSS language is CSS3, built upon several modules, each focused on a separate design topic.
+\end{itemize}
+
+\subsection{Types of Style Sheets}
+\begin{itemize}
+    \item \textbf{Browser styles or user agent styles}: Built into the browser.
+    \item \textbf{User -defined styles}: Defined by a user based on the configuration settings of the user’s browser.
+    \item \textbf{External styles}: Created by a website author, placed within a CSS file, and linked to the page.
+    \item \textbf{Embedded styles}: Added to the head of an HTML document.
+    \item \textbf{Inline styles}: Added as element attributes within an HTML document and applied to only that particular element.
+\end{itemize}
+
+\subsection{Exploring Style Rules}
+\begin{itemize}
+    \item General syntax of a CSS style rule:
+    \begin{lstlisting}
+    selector {
+        property1: value1;
+        property2: value2;
+        ...
+    }
+    \end{lstlisting}
+    \item Browser extensions are an extended library of style properties in the browser.
+    \item A vendor prefix indicates the browser vendor that created and supports the style property.
+\end{itemize}
+
+\subsection{Embedded Style Sheets}
+\begin{itemize}
+    \item Inserted directly into the HTML file as metadata by adding the following element to the document head:
+    \begin{lstlisting}
+    <style>
+    style rules
+    </style>
+    \end{lstlisting}
+\end{itemize}
+
+\subsection{Inline Styles}
+\begin{itemize}
+    \item Styles applied directly to specific elements using the following style attribute:
+    \begin{lstlisting}
+    <element style="property1: value1; property2: value2;">
+    content
+    </element>
+    \end{lstlisting}
+\end{itemize}
+
+\subsection{Style Specificity and Precedence}
+\begin{itemize}
+    \item The more specific style rule has precedence over the more general style rule.
+    \item Specificity is an issue when two or more styles conflict.
+    \item If two rules have equal specificity and equal importance, the one defined last has precedence.
+\end{itemize}
+
+\subsection{Style Inheritance}
+\begin{itemize}
+    \item Style inheritance is the process in which properties are passed from a parent element to its children.
+    \item Example:
+    \begin{lstlisting}
+    article { color: blue; }
+    p { text-align: center; }
+    \end{lstlisting}
+\end{itemize}
+
+\section{Working with Color in CSS}
+\subsection{Color Values}
+\begin{itemize}
+    \item RGB triplet: The intensity of primary colors expressed as a set of numbers in CSS.
+    \begin{lstlisting}
+    rgb(red, green, blue)
+    \end{lstlisting}
+    \item Hexadecimal numbers: A number expressed in the base 16 numbering system.
+\end{itemize}
+
+\subsection{HSL Color Values}
+\begin{itemize}
+    \item Hue: Tint of a color, represented by a direction on a color wheel.
+    \item Saturation: Measures the intensity of a color ( ranging from 0\% (no color) to 100\% (full color)).
+    \item Lightness: Measures the brightness of a color (ranging from 0\% (black) to 100\% (white)).
+\end{itemize}
+
+\subsection{Defining Semi-Opaque Colors}
+\begin{itemize}
+    \item Opacity defines how solid a color appears, specified using:
+    \begin{lstlisting}
+    rgba(red, green, blue, opacity)
+    hsla(hue, saturation, lightness, opacity)
+    \end{lstlisting}
+    where opacity ranges from 0 (completely transparent) to 1.0 (completely opaque).
+\end{itemize}
+
+\subsection{Setting Text and Background Color}
+\begin{itemize}
+    \item CSS defines the text and background color for each element on a webpage:
+    \begin{lstlisting}
+    color: color;
+    background-color: color;
+    \end{lstlisting}
+\end{itemize}
+
+\section{Using Pseudo-Classes and Pseudo-Elements}
+\subsection{Pseudo-Classes}
+\begin{itemize}
+    \item A pseudo-class classifies an element based on its current status, position, or use in the document:
+    \begin{lstlisting}
+    element: pseudo-class
+    \end{lstlisting}
+\end{itemize}
+
+\subsection{Pseudo-Elements}
+\begin{itemize}
+    \item A pseudo-element exists only in the rendered page and can be selected using:
+    \begin{lstlisting}
+    element::pseudo-element
+    \end{lstlisting}
+\end{itemize}
+
+\subsection{Generating Content with CSS}
+\begin{itemize}
+    \item New content can be added before or after an element using:
+    \begin{lstlisting}
+    element::before { content: text; }
+    element::after { content: text; }
+    \end{lstlisting}
+\end{itemize}
+
+\section{Formatting Lists}
+\begin{itemize}
+    \item To change the type of list marker or prevent any display of a list marker:
+    \begin{lstlisting}
+    list-style-type: type;
+    \end{lstlisting}
+\end{itemize}
+
+\section{Working with Margins and Padding}
+\begin{itemize}
+    \item To set the width of the padding space:
+    \begin{lstlisting}
+    padding: size;
+    \end{lstlisting}
+    \item To set the size of the margin around block-level elements:
+    \begin{lstlisting}
+    margin: size;
+    margin: top right bottom left;
+    \end{lstlisting}
+\end{itemize}
+
+\end{document}

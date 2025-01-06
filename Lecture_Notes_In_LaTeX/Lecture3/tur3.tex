@@ -1,0 +1,210 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Header
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Tutorial 3: Layout with CSS}
+\fancyhead[R]{Instructor: Mike Girimonte}
+
+% Section formatting
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+% Listings settings
+\lstset{
+  basicstyle=\ttfamily,
+  columns=flexible,
+  keepspaces=true,
+  frame=single,
+  backgroundcolor=\color{gray!10},
+  keywordstyle=\color{blue},
+  commentstyle=\color{green},
+  stringstyle=\color{red}
+}
+
+\title{Tutorial 3: Designing a Page Layout}
+\author{Hia Al Saleh}
+\date{October 14th, 2024}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage 
+
+\section{Objectives}
+\begin{itemize}
+    \item Create a reset style sheet
+    \item Explore page layout designs
+    \item Center a block element
+    \item Create a floating element
+    \item Clear a floating layout
+    \item Prevent container collapse
+    \item Explore grid-based layouts
+    \item Create a layout grid
+    \item Format a grid
+    \item Explore the CSS grid styles
+    \item Explore positioning styles
+    \item Work with relative positioning
+    \item Work with absolute positioning
+    \item Work with overflow content
+\end{itemize}
+
+\section{Page Layout with Floating Elements}
+\subsection{Introducing the display Style}
+HTML elements are classified into:
+\begin{itemize}
+    \item Block elements, such as paragraphs or headings
+    \item Inline elements, such as emphasized text or inline images
+\end{itemize}
+The display style can be defined for any page element using:
+\begin{lstlisting}
+display: type;
+\end{lstlisting}
+where type defines the display type.
+
+\subsection{Creating a Reset Style Sheet}
+A reset style sheet supersedes a browser’s default styles and provides a consistent starting point for page design. The first style rule in a sheet is the display property used to display HTML5 structural elements.
+
+\subsection{Exploring Page Layout Designs}
+Web page layouts fall into three categories:
+\begin{itemize}
+    \item Fixed layout – Size of the page and page elements are fixed, usually using pixels as the unit of measure.
+    \item Fluid layout – The width of the page elements are set as a percent of the available screen width.
+    \item Elastic layout – Images and text are always sized in proportion to each other in em units.
+\end{itemize}
+Responsive design – The layout and design of a page changes in response to the device that is rendering it.
+
+\subsection{Working with Width and Height}
+The width and height of an element are set using the following properties:
+\begin{lstlisting}
+width: value;
+height: value;
+\end{lstlisting}
+where value is the width or height using one of the CSS units of measurement or as a percentage of the width or height of the parent element.
+
+\subsection{Centering a Block Element}
+Block elements can be centered horizontally within their parent element by setting both the left and right margins to auto:
+\begin{lstlisting}
+body {
+    margin-left: auto;
+    margin-right: auto;
+}
+\end{lstlisting}
+
+\subsection{Vertical Centering}
+Centering an element vertically can be accomplished by displaying the parent element as a table cell and setting the vertical-align property to middle. For example, to vertically center the following h1 heading within the div element:
+\begin{lstlisting}
+<div>
+    <h1>Pandaisia Chocolates</h1>
+</div>
+\end{lstlisting}
+Apply the style rule:
+\begin{lstlisting}
+div {
+    height: 40px;
+    display: table-cell;
+    vertical-align: middle;
+}
+\end{lstlisting}
+
+\subsection{Floating Page Content}
+Floating an element takes it out of position and places it along the left or right side of its parent element. To float an element, apply:
+\begin{lstlisting}
+float: position;
+\end{lstlisting}
+where position is none (the default), left to float the object on the left margin, or right to float the object on the right margin.
+
+\subsection{Clearing a Float}
+To ensure that an element is always displayed below floated elements, use:
+\begin{lstlisting}
+clear: position;
+\end{lstlisting}
+where position can be left, right, both, or none. 
+
+\subsection{Refining a Floated Layout}
+The content box model refers to the width property, which only considers the width of an element's content. Additional space includes padding or borders. The border box model, on the other hand, bases the width property on the sum of the content, padding, and border spaces. The additional space taken up by the padding and border is subtracted from the space given to the content.
+
+\subsection{Working with Container Collapse}
+Container collapse occurs when an empty container has no content and contains floated elements. To prevent this, use the after pseudo-element to add a placeholder element after the footer:
+\begin{lstlisting}
+container::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+\end{lstlisting}
+
+\section{Page Layout Grids}
+A grid layout is based on rows of floating elements, where each floating element constitutes a column. The set of elements floating side-by-side establishes a row. Many grid layouts use the div (or division) element to mark distinct rows and columns of the grid.
+
+\subsection{Setting up a Grid}
+This is an example of a simple grid consisting of a single row with two columns:
+\begin{lstlisting}
+<div class="row">
+    <div class="column1"></div>
+    <div class="column2"></div>
+</div>
+\end{lstlisting}
+The page content is placed within the div elements.
+
+\subsection{Designing the Grid Rows}
+Grid rows contain floating columns. Since a grid row starts a new line within a page, it should only be displayed when both margins are clear of previously floated columns.
+
+\subsection{Defining a CSS Grid}
+To create a grid display without the use of div elements, use the following grid-based properties:
+\begin{lstlisting}
+selector {
+    display: grid;
+    grid-template-rows: track-list;
+    grid-template-columns: track-list;
+}
+\end{lstlisting}
+The fr unit represents the fraction of available space left on the grid after all other rows or columns have attained their maximum allowable size.
+
+\subsection{Assigning Content to Grid Cells}
+Elements in a CSS grid are placed within a grid cell at the intersection of a specified row and column. By default, all specified elements are placed in the grid cell located at the intersection of the first row and first column. To place an element in a different cell, use:
+\begin{lstlisting}
+grid-row-start: integer;
+grid-row-end: integer;
+grid-column-start: integer;
+grid-column-end: integer;
+\end{lstlisting}
+
+\section{Layout with Positioning Styles}
+To place an element at a specific position within its container, use:
+\begin{lstlisting}
+position: type;
+top: value;
+right: value;
+bottom: value;
+left: value;
+\end{lstlisting}
+where type indicates the kind of positioning applied to the element and top, right, bottom, and left properties indicate the coordinates of the element.
+
+\subsection{Handling Overflow}
+Overflow controls how a browser handles excess content:
+\begin{lstlisting}
+overflow: type;
+\end{lstlisting}
+where type can be visible (the default), hidden, scroll, or auto.
+
+\subsection{Clipping an Element}
+The clip property defines a rectangular region through which an element’s content can be viewed. Anything that lies outside the boundary of the rectangle is hidden. The syntax of the clip property is:
+\begin{lstlisting}
+clip: rect(top, right, bottom, left);
+\end{lstlisting}
+
+\subsection{Stacking Elements}
+By default, elements that are loaded later by a browser are displayed on top of elements that are loaded earlier. To specify a different stacking order, use the z-index property:
+\begin{lstlisting}
+z-index: value;
+\end{lstlisting}
+where value is a positive or negative integer, or the keyword auto.
+
+\end{document}

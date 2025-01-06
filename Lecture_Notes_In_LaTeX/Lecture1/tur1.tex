@@ -1,0 +1,219 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Header
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Tutorial 1: Getting Started with HTML5}
+\fancyhead[R]{Instructor: Mike Girimonte}
+
+% Section formatting
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+% Listings settings
+\lstset{
+  basicstyle=\ttfamily,
+  columns=flexible,
+  keepspaces=true,
+  frame=single,
+  backgroundcolor=\color{gray!10},
+  keywordstyle=\color{blue},
+  commentstyle=\color{green},
+  stringstyle=\color{red}
+}
+
+\title{Tutorial 1: Getting Started with HTML5}
+\author{Hia Al Saleh}
+\date{September 5th, 2024}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage 
+
+\section{Objectives}
+\begin{itemize}
+    \item Explore the history of the web
+    \item Create the structure of an HTML document
+    \item Insert HTML elements and attributes
+    \item Insert metadata into a document
+    \item Define a page title
+    \item Mark page structures with sectioning elements
+    \item Organize page content with grouping elements
+    \item Mark content with text-level elements
+    \item Insert inline images
+    \item Insert symbols based on character codes
+    \item Mark content using lists
+    \item Create a navigation list
+    \item Link to files within a website with hypertext links
+    \item Link to e-mail addresses and telephone numbers
+\end{itemize}
+
+\section{Exploring the World Wide Web}
+\subsection*{1. What is a network?}
+A network is a structure in which information and services are shared among devices. A host or a node can be any device that is capable of sending and/or receiving data electronically.
+
+\subsection*{2. What is a server and a client?}
+A server is a host that provides information or a service to other devices on the network. A computer or other device that receives a service is called a client. In a client-server network, clients access information provided by one or more users.
+
+\subsection*{3. Types of Networks}
+\begin{itemize}
+    \item \textbf{Local Area Network (LAN):} A network confined to a small geographic area, such as within a building or department.
+    \item \textbf{Wide Area Network (WAN):} A network that covers a wide area, such as several buildings or cities. The largest WAN in existence is the Internet.
+\end{itemize}
+
+\section{Introducing HTML}
+\subsection*{1. What is HTML?}
+A Web page is a text file written in HTML (Hypertext Markup Language). A markup language describes the content and structure of a document by identifying, or tagging, different document elements.
+
+\subsection*{2. The History of HTML}
+In the early years of HTML, browser developers were free to define and modify the language as no rules or syntax were defined. The World Wide Web Consortium (W3C) created a set of standards for all browser manufacturers to follow.
+
+\subsection*{3. Differences between HTML and XHTML}
+XHTML (Extensible Hypertext Markup Language) is a different version of HTML enforced with a stricter set of standards. HTML5 was developed as the de facto standard for the next generation of HTML.
+
+\section{The Structure of an HTML5 Document}
+\subsection*{1. Document Type Declaration}
+The first line in an HTML file is the document type declaration, or doctype, that indicates the type of markup language used in the document:
+\begin{lstlisting}
+<!DOCTYPE html>
+\end{lstlisting}
+
+\subsection*{2. Element Tags}
+An element tag is the fundamental building block in every HTML document that marks an element in the document. The general syntax of a two-sided element tag is:
+\begin{lstlisting}
+<element>content</element>
+\end{lstlisting}
+
+\subsection*{3. The Element Hierarchy}
+An HTML document is divided into two main sections: the head and the body. The head element marks information about the document, while the body element marks the content that will appear in the web page.
+
+\begin{lstlisting}
+<!DOCTYPE html>
+<html>
+<head>
+    head content
+</head>
+<body >
+    body content
+</body>
+</html>
+\end{lstlisting}
+
+\subsection*{4. Element Attributes}
+Element attributes provide additional information to the browser about the purpose of the element. The general syntax of an element attribute is:
+\begin{lstlisting}
+<element attr1="value1" attr2="value2">content</element>
+\end{lstlisting}
+
+\subsection*{5. Handling White Space}
+HTML file documents are composed of text characters and white space. A white-space character is any empty or blank character such as a space, tabs, or a line break. You can use white space to make your file easier to read by separating one code block from another.
+
+\section{Creating the Document Head}
+\subsection*{1. Metadata}
+The document head contains metadata, which is the content that describes or provides information about how the document should be processed by the browser.
+
+\subsection*{2. Setting the Page Title}
+To set the page title, use the following code:
+\begin{lstlisting}
+<title>Your Page Title</title>
+\end{lstlisting}
+
+\subsection*{3. Adding Metadata}
+To add metadata, you can use the meta element:
+\begin{lstlisting}
+<meta name="description" content="A brief description of the page.">
+\end{lstlisting}
+
+\subsection*{4. Adding Comments}
+A comment is descriptive text that is added to the HTML file but does not appear in the browser window:
+\begin{lstlisting}
+<!-- This is a comment -->
+\end{lstlisting}
+
+\section{Writing the Page Body}
+\subsection*{1. Sectioning Elements}
+HTML marks the major topical areas of a page using sectioning elements, also referred to as semantic elements. Examples include:
+\begin{itemize}
+    \item \texttt{<header>}: Represents introductory content or a set of navigational links.
+    \item \texttt{<nav>}: Contains navigation links.
+    \item \texttt{<section>}: Defines a section in a document.
+    \item \texttt{<article>}: Represents a self-contained piece of content.
+    \item \texttt{<aside>}: Contains content that is tangentially related to the content around it.
+    \item \texttt{<footer>}: Represents the footer for its nearest sectioning content or sectioning root element.
+\end{itemize}
+
+\subsection*{2. Grouping Elements}
+Grouping elements are used to group content together for styling or layout purposes. The most common grouping elements are:
+\begin{itemize}
+    \item \texttt{<div>}: A generic container for flow content.
+    \item \texttt{<span>}: A generic inline container for phrasing content.
+    \item \texttt{<figure>}: Represents self-contained content, often with a caption.
+    \item \texttt{<figcaption>}: Represents a caption or legend for a figure.
+\end{itemize}
+
+\subsection*{3. Text-Level Elements}
+Text-level elements are used to mark content within a block of text. Examples include:
+\begin{itemize}
+    \item \texttt{<strong>}: Indicates that its contents have strong importance.
+    \item \texttt{<em>}: Indicates emphasis that subtly changes the meaning of the sentence.
+    \item \texttt{<a>}: Defines a hyperlink.
+    \item \texttt{<code>}: Represents a fragment of computer code.
+    \item \texttt{<mark>}: Represents text that has been highlighted for reference purposes.
+    \item \texttt{<small>}: Represents side comments such as small print.
+    \item \texttt{<time>}: Represents a specific period in time.
+\end{itemize}
+
+\section{Working with Lists}
+\subsection*{1. Creating Lists}
+To create an unordered list:
+\begin{lstlisting}
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+\end{lstlisting}
+
+To create an ordered list:
+\begin{lstlisting}
+<ol>
+  <li>First Item</li>
+  <li>Second Item</li>
+</ol>
+\end{lstlisting}
+
+\subsection*{2. Description Lists}
+A description list is created using:
+\begin{lstlisting}
+<dl>
+  <dt>Term</dt>
+  <dd>Description of the term.</dd>
+</dl>
+\end{lstlisting}
+
+\section{Working with Hypertext Links}
+\subsection*{1. Creating Hyperlinks}
+Hypertext is created by enclosing content within a set of opening and closing \texttt{<a>} tags:
+\begin{lstlisting}
+<a href="url">Link Text</a>
+\end{lstlisting}
+
+\subsection*{2. Linking to E-Mail Addresses}
+To create a link to an email address:
+\begin{lstlisting}
+<a href="mailto:example@example.com">Email Us</a>
+\end{lstlisting}
+
+\subsection*{3. Linking to Phone Numbers}
+To create a link to a phone number:
+\begin{lstlisting}
+<a href="tel:+1234567890">Call Us</a>
+\end{lstlisting}
+
+\end{document}
