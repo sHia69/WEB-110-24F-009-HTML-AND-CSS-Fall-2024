@@ -1,0 +1,36 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Coding Challenge 1
+
+   Author: Hia Al Saleh
+   Date: 28/10/2024  
+   
+   Filename: code3-1_float.css
+
+*/
+
+/* Paragraph styles */
+p:first-of-type:first-letter {
+   float: left;
+   font-size: 4em;
+   line-height: 0.8em;
+   margin-right: 0.1em;
+   padding-right: 0.1em;
+   padding-bottom: 0.2em;
+ }
+
+ p:first-of-type:first-line {
+   font-variant: small-caps;
+   font-size: 1.4em;
+ }
+
+ /* Image styles */
+ img {
+   height: 3.3em;
+   float: right;
+   clear: both;
+ }
+ 
